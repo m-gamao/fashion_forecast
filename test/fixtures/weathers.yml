@@ -1,0 +1,17 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  temperature: MyString
+  precipitation: MyString
+  skies: MyString
+  humidity: MyString
+  zipcode: 1
+  date: MyString
+
+two:
+  temperature: MyString
+  precipitation: MyString
+  skies: MyString
+  humidity: MyString
+  zipcode: 1
+  date: MyString

@@ -6,18 +6,14 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-    1 = Outfit.create(name: "Cold")
-    2 = Outfit.create(name: "Cold/Rainy")
-    3 = Outfit.create(name: "Cold/Snowy")
-
-    4 = Outfit.create(name: "Cool")
-    5 = Outfit.create(name: "Cool/Rainy")
-
-    6 = Outfit.create(name: "Warm")
-    7 = Outfit.create(name: "Warm/Rainy")
-
-    8 = Outfit.create(name: "Hot")
-    9 = Outfit.create(name: "Hot/Rainy")
-
-
-    # Weather.create(temperature: "78", precipitation: "none", skies: "clear", zipcode)
+    weathers = Weather.create([{ name: 'Cold' }, 
+    { name: 'Cold/Rainy' }, 
+    { name: 'Cold/Snowing' }, 
+    { name: 'Cool' }, 
+    { name: 'Cool/Rainy' }, 
+    { name: 'Warm', temperature: '70-80 degrees' }, 
+    { name: 'Warm/Rainy' }, 
+    { name: 'Hot' },
+    { name: 'Hot/Rainy'}])
+    
+    Outfit.create(name: 'Chilly 1', weather: weathers.first)

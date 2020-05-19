@@ -1,3 +1,3 @@
 class Weather < ApplicationRecord
-  has_one :outfit
+  has_many :outfits
 end

@@ -8,7 +8,7 @@ class CreateWeathers < ActiveRecord::Migration[6.0]
       t.string :humidity
       t.integer :zipcode
       t.string :date
-      t.string :outfit_id
+      t.bigint :outfit_id, null: false
 
       t.timestamps
     end

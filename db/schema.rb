@@ -30,7 +30,7 @@ ActiveRecord::Schema.define(version: 2020_05_10_045456) do
     t.string "humidity"
     t.integer "zipcode"
     t.string "date"
-    t.string "outfit_id"
+    t.bigint "outfit_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
